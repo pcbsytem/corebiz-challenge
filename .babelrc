@@ -1,0 +1,9 @@
+{
+    "presets": [
+        "es2017"
+    ],
+    "plugins": [
+        "babel-plugin-transform-es2015-modules-systemjs",
+        "babel-plugin-transform-decorators-legacy"
+    ]
+}
