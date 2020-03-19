@@ -2,13 +2,69 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 
 <body>
-    churi
+  <header style="text-align: center;padding: 8px;margin-bottom: 16px;">
+    <div style="width: 80%;display: flex;align-items: center;justify-content: space-between;margin: 0 auto;">
+      <img src="./src/assets/image/logo-click-qi.png" alt="logo-click-qi" style="width: 181px;height: 38px;">
+      <div class="search">
+        <input type="search" name="search" id="">
+        <!-- <img src="./src/assets/image/search.png" alt="buscar"> -->
+      </div>
+
+      <div>
+        <img src="./src/assets/image/user.png" alt="usuario">
+        <span>Minha Conta</span>
+      </div>
+
+      <div>
+        <img src="./src/assets/image/shopping-cart.png" alt="carrinho">
+        <span
+          style="width: 18px;height: 18px;background-color: #F8475F;color: #ffffff;border-radius: 50%;display: inline-block;">1
+        </span>
+      </div>
+    </div>
+  </header>
+  <section class="banner">
+    <img class="wave" src="./src/assets/image/mask.png" alt="informacao" style="position: relative;z-index: 1;">
+  </section>
 </body>
+<style>
+  body {
+    margin: 0;
+  }
+
+  .search {
+    border-bottom: 1px solid #7A7A7A;
+    width: 40%;
+  }
+
+  .search input {
+    border: none;
+    outline: none;
+    background-image: url(./src/assets/image/search.png);
+    background-repeat: no-repeat;
+    background-position: right 18px;
+    height: 38px;
+    width: 99%;
+  }
+
+  .banner {
+    background-image: url(./src/assets/image/payment.png);
+    background-repeat: no-repeat;
+    background-position: right -4px;
+    background-size: 62% 100%;
+  }
+
+  .banner .wave {
+    width: 41%;
+    height: 430px;
+    object-fit: fill;
+  }
+</style>
 
 </html>
