@@ -10,7 +10,7 @@
 <body>
   <header class="header">
     <div class="container">
-      <img src="./src/assets/image/logo-click-qi.png" alt="logo-click-qi">
+      <img class="logo" src="./src/assets/image/logo-click-qi.png" alt="logo-click-qi">
       <div class="search">
         <input type="search" name="search" placeholder="O que está procurando?">
       </div>
@@ -28,7 +28,12 @@
   </header>
 
   <section class="banner">
-    <img class="wave" src="./src/assets/image/mask.png" alt="informacao">
+    <div class="wave">
+      <div>
+        <div>Olá, o que você está buscando?</div>
+        <h2>Criar ou migrar seu e-commerce?</h2>
+      </div>
+    </div>
   </section>
 
   <section class="prateleira">
@@ -134,7 +139,7 @@
   }
 
   .header {
-    height: 80px;
+    height: 46px;
     padding: 8px;
     display: flex;
     align-items: center;
@@ -146,6 +151,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .header .container .logo {
+    height: auto;
+    width: 130px;
   }
 
   .header .search {
@@ -182,16 +192,23 @@
   .banner {
     background-image: url(./src/assets/image/payment.png);
     background-repeat: no-repeat;
-    background-position: right -4px;
+    background-position: right;
     background-size: 62% 100%;
   }
 
   .banner .wave {
-    width: 41%;
-    height: 430px;
-    object-fit: fill;
-    position: relative;
-    z-index: 1;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 324px;
+    color: #ffffff;
+    background-image: url(./src/assets/image/mask.png);
+    background-position: inherit;
+  }
+
+  .banner .wave div {
+    width: 200px;
   }
 
   .prateleira {
@@ -229,11 +246,11 @@
     border: none;
     width: 150px;
     border-radius: 4px;
-    transition: background-color ease 500ms;
+    transition: opacity ease 500ms;
   }
 
   .item-shop .button:hover {
-    background-color: #00000098;
+    opacity: 0.8;
   }
 
   .item-shop .value {
