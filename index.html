@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Corebiz Shop</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./src/assets/style/index.css">
 </head>
 
 <body>
@@ -12,17 +14,19 @@
     <div class="container">
       <img class="logo" src="./src/assets/image/logo-click-qi.png" alt="logo-click-qi">
       <div class="search">
-        <input type="search" name="search" placeholder="O que está procurando?">
+        <input type="text" name="search" placeholder="O que está procurando?">
       </div>
 
       <div>
         <img src="./src/assets/image/user.png" alt="usuario">
-        <span>Minha Conta</span>
+        <span style="color: #7A7A7A;">Minha Conta</span>
       </div>
 
       <div class="shopping">
         <img src="./src/assets/image/shopping-cart.png" alt="carrinho">
-        <span class="indicator">1</span>
+        <span class="indicator">
+          <b style="font-size: 10px;margin: 3px 0;display: block;">1</b>
+        </span>
       </div>
     </div>
   </header>
@@ -31,13 +35,17 @@
     <div class="wave">
       <div>
         <div>Olá, o que você está buscando?</div>
-        <h2>Criar ou migrar seu e-commerce?</h2>
+        <h2 style="margin: 0;">Criar ou migrar seu e-commerce?</h2>
       </div>
     </div>
   </section>
 
   <section class="prateleira">
-    <h3>Mais Vendidos</h3>
+    <div style="margin: 16px 0;">
+      <h3 style="margin: 0 0 4px;">Mais Vendidos</h3>
+      <div style="border-bottom: 4px solid #C0C0C0;width: 50px;"></div>
+    </div>
+
     <div class="container">
 
       <div class="item-shop">
@@ -47,11 +55,33 @@
           <p class="name">Sapato Floater Preto</p>
 
           <div class="stars">
-            <img class="star" src="./src/assets/image/star-full.png" alt="estrela">
-            <img class="star" src="./src/assets/image/start-empty.png" alt="estrela">
-            <img class="star" src="./src/assets/image/start-empty.png" alt="estrela">
-            <img class="star" src="./src/assets/image/start-empty.png" alt="estrela">
-            <img class="star" src="./src/assets/image/start-empty.png" alt="estrela">
+            <div class="star full"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+          </div>
+        </div>
+
+        <h4 class="value">por R$ 259,00</h4>
+        <div class="parcelas">ou em 9x de R$ 28,87</div>
+
+        <button class="button">COMPRAR</button>
+      </div>
+
+      <div class="item-shop">
+        <div style="text-align: end;"></div>
+        <img class="image" src="./src/assets/image/payment.png" alt="produto">
+
+        <div class="product">
+          <p class="name">Sapato Floater Preto</p>
+
+          <div class="stars">
+            <div class="star full"></div>
+            <div class="star full"></div>
+            <div class="star full"></div>
+            <div class="star"></div>
+            <div class="star"></div>
           </div>
         </div>
 
@@ -68,11 +98,11 @@
           <p class="name">Sapato Floater Preto</p>
 
           <div class="stars">
-            <img class="star" src="./src/assets/image/star-full.png" alt="estrela">
-            <img class="star" src="./src/assets/image/start-empty.png" alt="estrela">
-            <img class="star" src="./src/assets/image/start-empty.png" alt="estrela">
-            <img class="star" src="./src/assets/image/start-empty.png" alt="estrela">
-            <img class="star" src="./src/assets/image/start-empty.png" alt="estrela">
+            <div class="star full"></div>
+            <div class="star full"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
           </div>
         </div>
 
@@ -89,32 +119,11 @@
           <p class="name">Sapato Floater Preto</p>
 
           <div class="stars">
-            <img class="star" src="./src/assets/image/star-full.png" alt="estrela">
-            <img class="star" src="./src/assets/image/start-empty.png" alt="estrela">
-            <img class="star" src="./src/assets/image/start-empty.png" alt="estrela">
-            <img class="star" src="./src/assets/image/start-empty.png" alt="estrela">
-            <img class="star" src="./src/assets/image/start-empty.png" alt="estrela">
-          </div>
-        </div>
-
-        <h4 class="value">por R$ 259,00</h4>
-        <div class="parcelas">ou em 9x de R$ 28,87</div>
-
-        <button class="button">COMPRAR</button>
-      </div>
-
-      <div class="item-shop">
-        <img class="image" src="./src/assets/image/payment.png" alt="produto">
-
-        <div class="product">
-          <p class="name">Sapato Floater Preto</p>
-
-          <div class="stars">
-            <img class="star" src="./src/assets/image/star-full.png" alt="estrela">
-            <img class="star" src="./src/assets/image/start-empty.png" alt="estrela">
-            <img class="star" src="./src/assets/image/start-empty.png" alt="estrela">
-            <img class="star" src="./src/assets/image/start-empty.png" alt="estrela">
-            <img class="star" src="./src/assets/image/start-empty.png" alt="estrela">
+            <div class="star full"></div>
+            <div class="star full"></div>
+            <div class="star full"></div>
+            <div class="star"></div>
+            <div class="star"></div>
           </div>
         </div>
 
@@ -127,160 +136,9 @@
     </div>
   </section>
 
-  <section style="height: 213px;bottom: 9px;background: #000000;">
+  <section style="height: 213px;bottom: 9px;background: #000000;margin: 36px 0 0;">
 
   </section>
-
 </body>
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .header {
-    height: 46px;
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .header .container {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .header .container .logo {
-    height: auto;
-    width: 130px;
-  }
-
-  .header .search {
-    border-bottom: 1px solid #7A7A7A;
-    width: 40%;
-  }
-
-  .header .search input {
-    border: none;
-    outline: none;
-    background-image: url(./src/assets/image/search.png);
-    background-repeat: no-repeat;
-    background-position: right 18px;
-    height: 38px;
-    width: 99.5%;
-  }
-
-  .header .shopping {
-    display: flex;
-    align-items: center;
-  }
-
-  .header .shopping .indicator {
-    width: 18px;
-    height: 18px;
-    background-color: #F8475F;
-    color: #ffffff;
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    margin: 0 4px;
-  }
-
-  .banner {
-    background-image: url(./src/assets/image/payment.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 62% 100%;
-  }
-
-  .banner .wave {
-    width: 45%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: 324px;
-    color: #ffffff;
-    background-image: url(./src/assets/image/mask.png);
-    background-position: inherit;
-  }
-
-  .banner .wave div {
-    width: 200px;
-  }
-
-  .prateleira {
-    height: 430px;
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .prateleira .container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .prateleira .container .item-shop {
-    width: 216px;
-    padding: 0 0 18px;
-    text-align: center;
-    background-color: #ffffff;
-    transition: background-color ease 500ms;
-  }
-
-  .prateleira .container .item-shop:hover {
-    background-color: #E6E8EA;
-  }
-
-  .prateleira .container .item-shop .image {
-    width: 216px;
-    height: 200px;
-  }
-
-  .item-shop .button {
-    background-color: #000000;
-    padding: 10px 0;
-    color: #ffffff;
-    border: none;
-    width: 150px;
-    border-radius: 4px;
-    transition: opacity ease 500ms;
-  }
-
-  .item-shop .button:hover {
-    opacity: 0.8;
-  }
-
-  .item-shop .value {
-    margin: 8px 0;
-  }
-
-  .item-shop .parcelas {
-    font-size: 11px;
-    color: #7A7A7A;
-    margin-bottom: 8px;
-  }
-
-  .product {
-    margin: 6px 0 18px;
-  }
-
-  .product .name {
-    margin: 0 0 4px;
-    color: #7A7A7A;
-  }
-
-  .product .stars {
-    display: flex;
-    justify-content: center;
-  }
-
-  .product .stars .star {
-    width: 16px;
-    height: auto;
-  }
-</style>
 
 </html>
