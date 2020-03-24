@@ -3,11 +3,40 @@ const url = 'https://www.clickqi.com.br/api/dataentities/CG/search?_fields=produ
 
 const initCarousel = () => {
   $('.carousel').slick({
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          arrows: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true
+        }
+      }
+    ]
   });
 }
 
@@ -48,8 +77,8 @@ const setShopItem = (productList) => {
             </div>
           </div>
 
-          <div style="color: #7A7A7A;text-decoration-line: line-through;"></div>
-          <h4 class="value">por R$ ${currentValue(product.productBestPrice)}</h4>
+          <div class="old-price">de R$ ${currentValue(product.productListPrice)}</div>
+          <h4 class="best-price">por R$ ${currentValue(product.productBestPrice)}</h4>
           <div class="parcelas">ou em ${product.productInstallments}x de R$ ${currentValue(product.productInstallmentsValue)}</div>
 
           <button class="button">COMPRAR</button>
