@@ -1,3 +1,4 @@
+import './assets/css/index.css';
 const url = 'https://www.clickqi.com.br/api/dataentities/CG/search?_fields=productName,productRating,productListPrice,productBestPrice,productInstallments,productInstallmentsValue,productImage&_sort=productName%20DESC';
 
 
@@ -28,7 +29,7 @@ const initCarousel = () => {
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 459,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -64,10 +65,9 @@ const showStars = (rate) => {
 const setShopItem = (productList) => {
   productList.map(product => {
     $(`
+      <div style="display: flex;justify-content: center;">
         <div class="item-shop">
-          <div class="image">
-            <img src="${product.productImage}" alt="produto">
-          </div>
+          <img class="image" src="${product.productImage}" alt="produto">
 
           <div class="product">
             <p class="name">${product.productName}</p>
@@ -77,13 +77,20 @@ const setShopItem = (productList) => {
             </div>
           </div>
 
-          <div class="old-price">de R$ ${currentValue(product.productListPrice)}</div>
-          <h4 class="best-price">por R$ ${currentValue(product.productBestPrice)}</h4>
-          <div class="parcelas">ou em ${product.productInstallments}x de R$ ${currentValue(product.productInstallmentsValue)}</div>
+          <div class="old-price ${!currentValue(product.productListPrice) ? 'hide' : ''}">
+            de R$ ${currentValue(product.productListPrice)}
+          </div>
+          <h4 class="best-price">
+            por R$ ${currentValue(product.productBestPrice)}
+          </h4>
+          <div class="parcelas">
+            ou em ${product.productInstallments}x de R$ ${currentValue(product.productInstallmentsValue)}
+          </div>
 
           <button class="button">COMPRAR</button>
         </div>
-      `).appendTo('.carousel');
+      </div>
+    `).appendTo('.carousel');
   });
 
   initCarousel();
@@ -94,7 +101,7 @@ const currentValue = (value) => {
   let length = value.toString().length;
   let valueText = value.toString();
 
-  if (!value) return '444,00';
+  if (!value) return '';
 
   if (length === 4) {
     current = `${valueText.substring(0, 2)},${valueText.substring(2, length)}`;
