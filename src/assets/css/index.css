@@ -179,7 +179,7 @@ body {
   opacity: 0;
 }
 
-.prateleira .carousel .item-shop .button.show {
+.prateleira .carousel .item-shop:hover .button {
   opacity: 1;
 }
 

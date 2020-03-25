@@ -62,6 +62,11 @@ const showStars = (rate) => {
 }
 
 const setShopItem = (productList) => {
+  if (productList && !productList.length) {
+    $('<h4>Nenhum item foi encontrado!</h4>').appendTo('.carousel');
+    return;
+  }
+
   productList.map(product => {
     $(`
       <div style="display: flex;justify-content: center;">
