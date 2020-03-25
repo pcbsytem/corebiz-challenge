@@ -2,7 +2,7 @@
 
 ## Corebiz Challenge
 
-### Este projeto é um desafio baseado no layout abaixo
+Este projeto é um desafio baseado no layout abaixo
 
 ![Desktop](https://user-images.githubusercontent.com/19713358/77489735-cc5a6200-6e17-11ea-9a44-6395de1b526c.png)
 
