@@ -1,4 +1,4 @@
-![ico-logo-clickqi](https://user-images.githubusercontent.com/19713358/77493196-3a575700-6e21-11ea-8dd7-3dcd877066f5.png)
+![logo-click-qi](https://user-images.githubusercontent.com/19713358/77493264-7094d680-6e21-11ea-954d-79d703fafbe9.png)
 
 # Corebiz Challenge
 
