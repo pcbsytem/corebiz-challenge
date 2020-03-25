@@ -22,16 +22,28 @@ body {
   display: block;
 }
 
-.header .container .part-two {  
+.header .container .part-two {
   width: 180px;
   display: flex;
   justify-content: space-between;
 }
 
-.header .container .logo {
-  height: auto;
-  width: 130px;
+.header .container .account .user {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background-image: url(../image/user.png);
 }
+
+.header .container .logo {
+  height: 36px;
+  width: 130px;
+  background-image: url(../image/logo-click-qi.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .header .container .menu {
   display: none;
 }
@@ -54,10 +66,10 @@ body {
 
 .header .container .my-account {
   color: #7A7A7A;
+  vertical-align: top;
 }
 
-.header .container .shopping,
-.header .container .shopping-m {
+.header .container .shopping, .header .container .shopping-m {
   display: flex;
   align-items: center;
 }
@@ -66,8 +78,14 @@ body {
   display: none;
 }
 
-.header .container .shopping .indicator,
-.header .container .shopping-m .indicator {
+.header .container .shopping-cart {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background-image: url(../image/shopping-cart.png);
+}
+
+.header .container .shopping .indicator, .header .container .shopping-m .indicator {
   width: 18px;
   height: 18px;
   background-color: #F8475F;
@@ -78,8 +96,7 @@ body {
   margin: 0 4px;
 }
 
-.header .container .shopping .indicator b,
-.header .container .shopping-m .indicator b {
+.header .container .shopping .indicator b, .header .container .shopping-m .indicator b {
   font-size: 10px;
   margin: 3px 0;
   display: block;
@@ -172,6 +189,16 @@ body {
 
 .slick-dots li.slick-active button:before {
   color: #F8475F !important;
+}
+
+.item-shop .discount {
+  width: 216px;
+  height: 200px;
+  position: absolute;
+  background-image: url(../image/discount.png);
+  background-position: right 0;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
 .item-shop .button {
@@ -272,9 +299,10 @@ body {
 
 .footer .container .info .button {
   width: 198px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+}
+
+.footer .container .info .button span {
+  margin-left: 24px;
 }
 
 .footer .container .info .logos {
@@ -285,8 +313,37 @@ body {
   justify-content: space-between;
 }
 
+.footer .container .info .clickqi {
+  width: 76px;
+  height: 16px;
+  background-image: url(../image/logo-click-qi-light.png);
+}
+
+.footer .container .info .vtex {
+  width: auto;
+  height: 19px;
+  background-image: url(../image/vtex.png);
+}
+
 .footer .container .info .button:first-child {
   margin-bottom: 24px;
+}
+
+.mail {
+  background-image: url(../image/email.png);
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+}
+
+.talk {
+  background-image: url(../image/talk-to-us.png);
+  background-position: 10px 15px;
+  background-repeat: no-repeat;
+}
+
+.talk span {
+  width: 80%;
+  display: inline-block;
 }
 
 /* Common styles */
@@ -343,9 +400,16 @@ body {
   .header .container .part-two {
     width: 100%;
   }
+  .header .container .part-two .user {
+    /* width: 100%; */
+    background-image: url(../image/user.png);
+  }
   .header .container .menu {
+    height: 24px;
+    width: 24px;
     display: initial;
     margin-right: 8px;
+    background-image: url(../image/menu.png);
   }
   .header .container .account {
     display: none;
@@ -354,13 +418,12 @@ body {
     display: none;
   }
   .header .container .shopping-m {
-    display: initial;
+    display: flex;
   }
   .header .container .search {
     margin-top: 8px;
   }
-  .header .container .search,
-  .header .container .search input {
+  .header .container .search, .header .container .search input {
     width: 100%;
   }
   .banner {

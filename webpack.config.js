@@ -22,7 +22,7 @@ module.exports = {
         loader: 'file-loader',
         options: {
           outputPath: 'images',
-        },
+        }
       }
     ]
   },
@@ -34,5 +34,10 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'index.css'
     })
-  ]
+  ],
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 3000
+  }
 }

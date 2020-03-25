@@ -45,7 +45,6 @@ const request = () => {
   fetch(url)
     .then(res => res.json())
     .then(res => {
-      console.log(res);
       setShopItem(res);
     })
 }
@@ -67,6 +66,7 @@ const setShopItem = (productList) => {
     $(`
       <div style="display: flex;justify-content: center;">
         <div class="item-shop">
+          <div class="${product.productListPrice !== 0 && 'discount'}"></div>
           <img class="image" src="${product.productImage}" alt="produto">
 
           <div class="product">
