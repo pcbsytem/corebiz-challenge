@@ -10,13 +10,13 @@ Este projeto é um desafio baseado no layout abaixo
 
 ### Alguns framewoks e facilitadores usados no projeto
 
-#### - Jquery - https://jquery.com/
-#### - slick (carousel) - https://kenwheeler.github.io/slick/
-#### - webpack - https://webpack.js.org/
+- Jquery - https://jquery.com/
+- slick (carousel) - https://kenwheeler.github.io/slick/
+- webpack - https://webpack.js.org/
 
 
 ## Getting started
 
-#### 1 - npm install
-#### 2 - npm start (para roda essa bagaça)
-#### 3 - npm build (para gerar o dist)
+1 - npm install
+2 - npm start (para roda essa bagaça)
+3 - npm build (para gerar o dist)
